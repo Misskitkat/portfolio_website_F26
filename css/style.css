@@ -34,13 +34,11 @@ body {
 
       .brand {
         margin-right: auto;
-        padding: 14px 16px;
+        padding: 14px 14px;
         color: #00200c;
         font-weight: bold;
         font-size: 20px;
-        /* max-width: 50px; */
         height: auto;
-        /* gap: 8px; */
       }
 
       .logo {
@@ -49,15 +47,31 @@ body {
         margin-left: 10px;
       }
 
+      .project-grid img {
+        width: 150px;
+        max-width: 100%;
+        height: auto;
+      }
+
       .content {
         max-width: 1100px;
         margin: 0 auto;
         padding: 20px 24px 40px;
       }
 
-      h2 {
+      h1 {
         margin: 18px 0 10px;
         font-size: 24px;
+      }
+
+      h2 {
+        margin: 18px 0 10px;
+        font-size: 20px;
+      }
+
+      p {
+        margin: 18px 0 10px;
+        font-size: 16px;
       }
 
       table {
