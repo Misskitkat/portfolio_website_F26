@@ -1,56 +1,22 @@
 <!doctype html>
 <html>
   <head>
+    <link rel="stylesheet" href="../css/style.css">
     <style>
-      body {text-align:center;
-        background-color:#00200c;
-
-        color:White;
-        font-family: 'Trebuchet MS', sans-serif;
-      }
-
-      span {
-        display: inline-block;
-        background:#a7e0f8;
-        padding:10px 8px;
-        margin-bottom:10px;
-        font-size:18px;
-
-      }
-
-      table {
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        border-collapse: collapse;
-      }
-
-      th:first-child,
-      td:first-child {
-        text-align: left;
-      }
-
-      th:nth-child(3),
-      td:nth-child(3) {
-        text-align: right;
-        white-space: nowrap;
-        vertical-align: top;
-      }
-    
-      table, th, td {
-        /* border: 1px solid black; */
-        border-collapse: collapse;
-        font-size:18px;
-        text-align: left;
-      }
-      th, td {
-        padding: 5px;
-      }
+      
     </style>
   </head>
   <body>
-    <h1 style="border:4px solid LightGreen; background:SeaGreen; font-size:30px;padding:10px 10px;">About</h1>
-    <h2 style="font-size:24px;">Education</h2>
+    <div class="topnav">
+      <div class="brand">Katie Boscombe</div>
+      <a href="index.html">Home</a>
+      <a class="active" href="pages/about.html">About</a>
+      <a href="pages/projects.html">Projects</a>
+      <a href="pages/contact.html">Contact</a>
+    </div>
+
+    <main class="content">
+      <h2>Education</h2>
 
     <table>
 
@@ -75,9 +41,9 @@
       </tr>
 
     </table>
-    <hr style="border: none; height: 5px; background-color: SeaGreen;">
+    <hr>
 
-    <h2 style="font-size:24px;">Experience</h2>
+    <h2>Experience</h2>
 
     <table>
 
@@ -186,7 +152,7 @@
 
     </table>
 
-    <hr style="border: none; height: 5px; background-color: SeaGreen;">
-
+    <hr>
+    </main>
   </body>
 </html>
