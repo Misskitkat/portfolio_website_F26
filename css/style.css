@@ -1,21 +1,91 @@
+:root{
+  /* Colors */
+  --the-green: rgb(60, 182, 74);
+  --dark-green: #00200c;
+  --background-color: SeaGreen;
+  --font-color: white;
+  --highlight-color: LightGreen;
+
+  /* Sizes */
+  --max-width: 1000px;
+
+  /* Fonts */
+  --main-font: 'Jetbrains Mono', monospace;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/jetbrains/fonts/webfonts/JetBrainsMono-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/jetbrains/fonts/webfonts/JetBrainsMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/jetbrains/fonts/webfonts/JetBrainsMono-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/jetbrains/fonts/webfonts/JetBrainsMono-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
         margin: 0;
-        font-family: 'Trebuchet MS', sans-serif;
-        color: White;
-        background-color: #00200c;
+        font-family: var(--main-font);
+        font-weight: var(--font-weight-medium);
+        color: var(--font-color);
+        background-color: var(--dark-green);
       }
 
       .topnav {
         overflow: hidden;
         align-items: center;
-        background-color: rgb(0, 153, 51);
+        background-color: var(--the-green);
+        font-weight: var(--font-weight-regular);
         display: flex;
+        justify-content: flex-end;
+        position: sticky;
+        top: 0;
+      }
+
+      .topnav-inner {
+        width: 100%;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+
+        overflow: hidden;
+        align-items: center;
         justify-content: flex-end;
       }
 
       .topnav a {
         float: none;
-        color: #f2f2f2;
+        color: var(--font-color);
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
@@ -23,20 +93,43 @@ body {
       }
 
       .topnav a:hover {
-        background-color: LightGreen;
-        color: #00200c;
+        background-color: var(--highlight-color);
+        color: var(--dark-green);
       }
 
       .topnav a.active {
-        background-color: LightGreen;
-        color: #00200c;
+        background-color: var(--highlight-color);
+        color: var(--dark-green);
+      }
+
+      .footer {
+        overflow: hidden;
+        align-items: center;
+        background-color: var(--the-green);
+        font-weight: var(--font-weight-regular);
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .footer-inner {
+        width: 100%;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        box-sizing: border-box;
+
+        display: flex;
+        align-items: center;
+
+        overflow: hidden;
+        align-items: center;
+        justify-content: flex-end;
       }
 
       .brand {
         margin-right: auto;
         padding: 14px 14px;
-        color: #00200c;
-        font-weight: bold;
+        color: var(--dark-green);
+        font-weight: var(--font-weight-bold);
         font-size: 20px;
         height: auto;
       }
@@ -56,7 +149,7 @@ body {
         height: auto;
         box-sizing:border-box;
         margin: 0 auto;
-        border: 3px solid rgb(0, 153, 51);
+        border: 3px solid var(--the-green);
       }
 
       .project-grid > a {
@@ -65,17 +158,19 @@ body {
       }
 
       .project-grid img:hover {
-        border-color: LightGreen;
+        border-color: var(--highlight-color);
     }
 
       .content {
-        max-width: 1100px;
+        max-width: var(--max-width);
+        font-weight: var(--font-weight-medium);
         margin: 0 auto;
         padding: 20px 24px 40px;
       }
 
       h1 {
         margin: 18px 0 10px;
+        font-weight: var(--font-weight-bold);
         font-size: 24px;
       }
 
@@ -85,13 +180,14 @@ body {
       }
 
       p {
+        font-weight: var(--font-weight-light);
         margin: 18px 0 10px;
         font-size: 16px;
       }
 
       table {
         width: 100%;
-        max-width: 1100px;
+        max-width: var(--max-width);
         margin: 0 auto 18px;
         border-collapse: collapse;
       }
@@ -121,7 +217,7 @@ body {
       hr {
         border: none;
         height: 5px;
-        background-color: SeaGreen;
+        background-color: var(--the-green);
         margin: 18px auto 12px;
-        max-width: 1100px;
+        max-width: var(--max-width);
       }
