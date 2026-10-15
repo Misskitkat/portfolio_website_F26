@@ -1,4 +1,4 @@
-:root{
+:root {
   /* Colors */
   --the-green: rgb(60, 182, 74);
   --dark-green: #00200c;
@@ -51,173 +51,169 @@
 }
 
 body {
-        margin: 0;
-        font-family: var(--main-font);
-        font-weight: var(--font-weight-medium);
-        color: var(--font-color);
-        background-color: var(--dark-green);
-      }
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: var(--font-weight-medium);
+  color: var(--font-color);
+  background-color: var(--dark-green);
+}
 
-      .topnav {
-        overflow: hidden;
-        align-items: center;
-        background-color: var(--the-green);
-        font-weight: var(--font-weight-regular);
-        display: flex;
-        justify-content: flex-end;
-        position: sticky;
-        top: 0;
-      }
+.topnav {
+  overflow: hidden;
+  align-items: center;
+  background-color: var(--the-green);
+  font-weight: var(--font-weight-regular);
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+}
 
-      .topnav-inner {
-        width: 100%;
-        max-width: var(--max-width);
-        margin: 0 auto;
-        box-sizing: border-box;
+.topnav-inner {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-        display: flex;
-        align-items: center;
+.topnav a {
+  float: none;
+  color: var(--font-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
-        overflow: hidden;
-        align-items: center;
-        justify-content: flex-end;
-      }
+.topnav a:hover {
+  background-color: var(--highlight-color);
+  color: var(--dark-green);
+}
 
-      .topnav a {
-        float: none;
-        color: var(--font-color);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
+.topnav a.active {
+  background-color: var(--highlight-color);
+  color: var(--dark-green);
+}
 
-      .topnav a:hover {
-        background-color: var(--highlight-color);
-        color: var(--dark-green);
-      }
+.footer {
+  overflow: hidden;
+  align-items: center;
+  background-color: var(--the-green);
+  font-weight: var(--font-weight-regular);
+  display: flex;
+  justify-content: flex-end;
+}
 
-      .topnav a.active {
-        background-color: var(--highlight-color);
-        color: var(--dark-green);
-      }
+.footer-inner {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: flex-end;
+}
 
-      .footer {
-        overflow: hidden;
-        align-items: center;
-        background-color: var(--the-green);
-        font-weight: var(--font-weight-regular);
-        display: flex;
-        justify-content: flex-end;
-      }
+.brand {
+  margin-right: auto;
+  padding: 14px 14px;
+  color: var(--dark-green);
+  font-weight: var(--font-weight-bold);
+  font-size: 20px;
+  height: auto;
+}
 
-      .footer-inner {
-        width: 100%;
-        max-width: var(--max-width);
-        margin: 0 auto;
-        box-sizing: border-box;
+.logo {
+  max-width: 50px;
+  height: auto;
+  margin-left: 10px;
+}
 
-        display: flex;
-        align-items: center;
+.project-grid img {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: 3px solid var(--the-green);
+}
 
-        overflow: hidden;
-        align-items: center;
-        justify-content: flex-end;
-      }
+.project-grid > a {
+  display: block;
+  text-align: center;
+}
 
-      .brand {
-        margin-right: auto;
-        padding: 14px 14px;
-        color: var(--dark-green);
-        font-weight: var(--font-weight-bold);
-        font-size: 20px;
-        height: auto;
-      }
+.project-grid img:hover {
+  border-color: var(--highlight-color);
+}
 
-      .logo {
-        max-width: 50px;
-        height: auto;
-        margin-left: 10px;
-      }
+.content {
+  max-width: var(--max-width);
+  font-weight: var(--font-weight-medium);
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+}
 
-      .project-grid img {
-        display: block;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-        box-sizing:border-box;
-        margin: 0 auto;
-        border: 3px solid var(--the-green);
-      }
+h1 {
+  margin: 18px 0 10px;
+  font-weight: var(--font-weight-bold);
+  font-size: 24px;
+}
 
-      .project-grid > a {
-        display: block;
-        text-align: center;
-      }
+h2 {
+  margin: 18px 0 10px;
+  font-size: 20px;
+}
 
-      .project-grid img:hover {
-        border-color: var(--highlight-color);
-    }
+p {
+  font-weight: var(--font-weight-light);
+  margin: 18px 0 10px;
+  font-size: 16px;
+}
 
-      .content {
-        max-width: var(--max-width);
-        font-weight: var(--font-weight-medium);
-        margin: 0 auto;
-        padding: 20px 24px 40px;
-      }
+table {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto 18px;
+  border-collapse: collapse;
+}
 
-      h1 {
-        margin: 18px 0 10px;
-        font-weight: var(--font-weight-bold);
-        font-size: 24px;
-      }
+th:first-child,
+td:first-child {
+  text-align: left;
+}
 
-      h2 {
-        margin: 18px 0 10px;
-        font-size: 20px;
-      }
+th:nth-child(3),
+td:nth-child(3) {
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: top;
+}
 
-      p {
-        font-weight: var(--font-weight-light);
-        margin: 18px 0 10px;
-        font-size: 16px;
-      }
+table, th, td {
+  border-collapse: collapse;
+  font-size: 18px;
+  text-align: left;
+}
 
-      table {
-        width: 100%;
-        max-width: var(--max-width);
-        margin: 0 auto 18px;
-        border-collapse: collapse;
-      }
+th, td {
+  padding: 5px 0;
+}
 
-      th:first-child,
-      td:first-child {
-        text-align: left;
-      }
-
-      th:nth-child(3),
-      td:nth-child(3) {
-        text-align: right;
-        white-space: nowrap;
-        vertical-align: top;
-      }
-
-      table, th, td {
-        border-collapse: collapse;
-        font-size: 18px;
-        text-align: left;
-      }
-
-      th, td {
-        padding: 5px 0;
-      }
-
-      hr {
-        border: none;
-        height: 5px;
-        background-color: var(--the-green);
-        margin: 18px auto 12px;
-        max-width: var(--max-width);
-      }
+hr {
+  border: none;
+  height: 5px;
+  background-color: var(--the-green);
+  margin: 18px auto 12px;
+  max-width: var(--max-width);
+}
