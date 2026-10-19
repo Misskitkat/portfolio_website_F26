@@ -104,6 +104,40 @@ body {
   color: var(--dark-green);
 }
 
+button.navbar-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 14px 16px;
+}
+
+.navbar-button img {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+.navbar-button {
+  display:none;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.topnav.brand-wrapped .navbar-button {
+  display:block;
+}
+
+.topnav.brand-wrapped .navbar-links {
+  display:none;
+}
+
+.topnav.brand-wrapped.menu-open .navbar-links {
+  display:flex;
+  flex-direction: column;
+}
+
 .footer {
   overflow: hidden;
   align-items: center;
