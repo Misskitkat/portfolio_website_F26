@@ -1,8 +1,6 @@
 const navbar = document.querySelector("#site-navbar");
 const siteRoot = navbar.dataset.siteRoot;
 const brand = navbar.querySelector(".brand");
-const topNavbar = navbar.querySelector(".topnav");
-const navButton = navbar.querySelector(".navbar-button");
 
 fetch(`${siteRoot}components/navbar.html`)
   .then((response) => {
@@ -17,17 +15,18 @@ fetch(`${siteRoot}components/navbar.html`)
       element.setAttribute(attribute, siteRoot + element.dataset.path);
       element.removeAttribute("data-path");
     });
-    const brand = navbar.querySelector(".brand");
     const topNavbar = navbar.querySelector(".topnav");
-    const navButton = navbar.querySelector(".navbar-button");
     const navInner = navbar.querySelector(".topnav-inner");
+    const navButton = navbar.querySelector(".navbar-button");
 
-    const checkBrandWrap = () => {
-      const range = document.createRange();
-      range.selectNodeContents(brand);
+    const checkNavbarWidth = () => {
+      const needsDropdown = navInner.clientWidth < 760;
+      topNavbar.classList.toggle("brand-wrapped", needsDropdown);
 
-      const isWrapped = range.getClientRects().length > 1;
-      topNavbar.classList.toggle("brand-wrapped", isWrapped);
+      if (!needsDropdown) {
+        topNavbar.classList.remove("menu-open");
+        navButton.setAttribute("aria-expanded", "false");
+      }
     };
 
     navButton.addEventListener("click", () => {
@@ -35,9 +34,9 @@ fetch(`${siteRoot}components/navbar.html`)
       navButton.setAttribute("aria-expanded", isOpen);
     });
 
-    const resizeObserver = new ResizeObserver(checkBrandWrap);
+    const resizeObserver = new ResizeObserver(checkNavbarWidth);
     resizeObserver.observe(navInner);
-    checkBrandWrap();
+    checkNavbarWidth();
   })
   .catch((error) => console.error(error));
 

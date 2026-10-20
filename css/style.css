@@ -117,8 +117,17 @@ button.navbar-button {
   height: 24px;
 }
 
+.topnav,
+.topnav-inner {
+  overflow: visible;
+}
+
+.topnav-inner {
+  position: relative;
+}
+
 .navbar-button {
-  display:none;
+  display: none;
 }
 
 .navbar-links {
@@ -126,16 +135,20 @@ button.navbar-button {
 }
 
 .topnav.brand-wrapped .navbar-button {
-  display:block;
+  display: block;
 }
 
 .topnav.brand-wrapped .navbar-links {
-  display:none;
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  flex-direction: column;
+  background-color: var(--the-green);
 }
 
 .topnav.brand-wrapped.menu-open .navbar-links {
-  display:flex;
-  flex-direction: column;
+  display: flex;
 }
 
 .footer {
@@ -192,6 +205,7 @@ button.navbar-button {
 .project-grid > a {
   display: block;
   text-align: center;
+  color: var(--font-color);
 }
 
 .project-grid img:hover {
