@@ -96,7 +96,7 @@ body {
 }
 
 .topnav a:hover {
-  background-color: var(--highlight-color);
+  background-color: var(--highlight-color) ;
   color: var(--dark-green);
 }
 
@@ -145,7 +145,7 @@ button.navbar-button {
   top: 100%;
   right: 0;
   flex-direction: column;
-  background-color: color-mix(in srgb, var(--the-green) 50%, transparent);
+  background-color: color-mix(in srgb, var(--the-green) 90%, transparent);
 }
 
 .topnav.brand-wrapped.menu-open .navbar-links {
