@@ -72,6 +72,7 @@ body {
   justify-content: flex-end;
   position: sticky;
   top: 0;
+  z-index: 10;
 }
 
 .topnav-inner {
@@ -144,7 +145,7 @@ button.navbar-button {
   top: 100%;
   right: 0;
   flex-direction: column;
-  background-color: var(--the-green);
+  background-color: color-mix(in srgb, var(--the-green) 50%, transparent);
 }
 
 .topnav.brand-wrapped.menu-open .navbar-links {
@@ -195,21 +196,63 @@ button.navbar-button {
   align-items: center;
   justify-content: center;
   width: 100%;
-  max-width: 250px;
-  height: auto;
+  max-width: 300px;
   box-sizing: border-box;
   margin: 0 auto;
-  border: 3px solid var(--the-green);
+  /* border: 3px solid var(--the-green); */
 }
 
 .project-grid > a {
   display: block;
   text-align: center;
   color: var(--font-color);
+    text-decoration: none;
+
+  /* text-decoration-color: var(--the-green); */
 }
 
-.project-grid img:hover {
+/* .project-grid img:hover {
   border-color: var(--highlight-color);
+} */
+
+.project-image {
+  position: relative;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  z-index: -1;
+}
+
+.project-container {
+  position: relative;
+  /* display: inline-block; */
+  width: 100%;
+  max-width: 300px;
+  aspect-ratio: 1/1;
+  position: relative;
+  object-fit: contain;
+  margin: 0 auto;
+  
+}
+
+.project-grid a:hover {
+  color: var(--highlight-color);
+}
+
+.project-grid .project-shape {
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -13px;
+  align-items: center;
+  justify-content: center;
+  width: 105.6%;
+  left: -5%;
+  max-width: 315px;
+  height: auto;
+  object-fit: cover;
+  box-sizing: border-box;
+  z-index: 0;
+  
 }
 
 .content {
