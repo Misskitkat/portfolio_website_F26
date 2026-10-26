@@ -283,30 +283,6 @@ button.navbar-button {
   content: "";
   position: absolute;
   z-index: -1;
-
-  /* width: 100vw;
-  height: 180px;
-  left: 0%;
-  top: 0%; 
-  inset: -0.5rem -1rem;
-  transform: translateY(-25%);
-  background: url("../svg/style_svg/cy-resume-section-header.svg") center / 100% 100% no-repeat;
-
-  left: calc(50% - 50vw); 
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100vw;
-  height: 180px;
-  box-sizing: border-box;
-
-  border: 0 solid transparent;
-  border-left-width: 360px;
-  border-right-width: 360px;
-
-  border-image-source: url("../svg/style_svg/cy-resume-section-header.svg");
-  border-image-slice: 0 360 0 360 fill;
-  border-image-width: 0 360px;
-  border-image-repeat: stretch; */
 }
 
 .resume-entry,
