@@ -234,8 +234,12 @@ button.navbar-button {
   
 }
 
-.project-grid a:hover {
-  color: var(--highlight-color);
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 30px;
+  padding: 30px;
+  justify-items: center;
 }
 
 .project-grid .project-shape {
@@ -253,6 +257,12 @@ button.navbar-button {
   box-sizing: border-box;
   z-index: 0;
   
+}
+
+.swatch-color {
+  width: 200px;
+  height: 200px;
+  background-color: var(--swatch-color);
 }
 
 .content {
@@ -359,6 +369,58 @@ button.navbar-button {
   height: 24px;
   margin-right: 4px;
   vertical-align: -0.40rem;
+}
+
+.project-content {
+  max-width: var(--max-width);
+  font-weight: var(--font-weight-medium);
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 20px 24px 40px;
+  flex: 1;
+}
+
+.project-header-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+
+}
+
+.project-logo {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+  height: auto;
+  
+  
+}
+
+.project-type-logo {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.project-content p {
+    padding: 0 30px 40px;
+}
+
+.project-advertisement-container {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.project-advertisement {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 0 0 40px;
 }
 
 @media (max-width: 600px) {
